@@ -30,3 +30,8 @@
 → 상단바 색상이 투명 → 반투명한 검은색으로 스크롤에 따라 변경되고, 상단바에 앱 화면이 비쳐보이는 것으로 보아 FrameLayout과 Coordinator Layout, Collapsing Toolbar Layout 을 사용한 것으로 추측되지만,      FrameLayout 스크롤 시 Collapsing Toolbar 또한 스크롤 동작을 동일하게 하는 방법을 찾을 수 없었다.
 
 🤦🏻 결국 Fragment를 구성하는 XML파일은 하나로 두고, FrameLayout을 사용하여 ViewPager의 Position에 따라서 Visibility를 변경하는 방식으로 구현했다. 질문방에서 답변해주신 사항을 검색해본 결과, 하나하나의 셀에 지정을 해줘야 하는 것으로 보인다. 그러한 방법보다는 XML에서 구성 후 Visibility를 Visible ↔ Gone 으로 사용하는 방식이 조금 더 효율적일것 같다고 생각했다.
+
+
+
+![Screenshot_20211229-153922_RC_Challenge_2](https://user-images.githubusercontent.com/80454599/163402921-5cf57823-9047-48c0-9d1c-481e2e604bfe.jpg)
+
